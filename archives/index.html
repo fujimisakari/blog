@@ -43,6 +43,14 @@
                                 <div class="mp-scroll">
                                 
                                 <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/11/16/HEXOの使い方/">HEXOの使い方</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/11/16/HEXOでブログ構築手順/">HEXOでブログ構築手順</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
                                     <a href="/2014/11/16/ブログを開設しました/">ブログを開設しました</a>
                                 </li>
                                 
@@ -63,6 +71,11 @@
                             </form>
                             <ul>
                                 <div class="mp-scroll">
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/HEXO/">&nbsp;&nbsp;&nbsp;HEXO</a>
+                                    <small>2</small>
+                                </li>
                                 
                                 </div>
                             </ul>
@@ -96,8 +109,14 @@
         <div id="pjax">
             <div class="pjax-hidden" style="display: none">
                 
+                    <a  data-pjax href="/2014/11/16/HEXOの使い方/">HEXOの使い方</a>
+                
+                    <a  data-pjax href="/2014/11/16/HEXOでブログ構築手順/">HEXOでブログ構築手順</a>
+                
                     <a  data-pjax href="/2014/11/16/ブログを開設しました/">ブログを開設しました</a>
                 
+                
+                    <a data-pjax href="/categories/HEXO/">&nbsp;&nbsp;HEXO</a>
                 
                 
                 <a data-pjax class="fa fa-user" href="/about">&nbsp;&nbsp;&nbsp;About me</a>
@@ -134,6 +153,127 @@
   
 <main class="content" role="main">
 
+    
+    <article class="post">
+
+        <header class="post-header">
+            <!-- <div class="tag-tile">
+            
+                <span class="fa fa-bookmark" style="float:right;color:#f39c12"></span>
+                </div> -->
+            <h1 class="post-title"><a data-pjax href="/2014/11/16/HEXOの使い方/">HEXOの使い方</a>
+            </h1>
+
+            <div class="post-meta">
+                Post on<span class="fa fa-clock-o"></span>
+                <time datetime="2014-11-16T12:40:40.000Z"
+                      itemprop="datePublished">Nov 16 2014</time>
+            </div>
+        </header>
+
+        <section class="post-content">
+            <h2 id="デプロイする">デプロイする</h2>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment">% hexo deploy -g</span></div><div class="line">or</div><div class="line"><span class="comment">% hexo d -g</span></div></pre></td></tr></table></figure>
+
+<p>-gで静的HTMLをpublicフォルダ内に生成してくれる</p>
+<h2 id="新たに投稿する">新たに投稿する</h2>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">% hexo <span class="keyword">new</span> <span class="string">'hexoについて'</span></div></pre></td></tr></table></figure>
+
+<p>source/_postsフォルダに”hexoについて.md”というファイルが生成される<br>あとはこのファイルを編集して記事の詳細を書く</p>
+<h2 id="テーマの変更">テーマの変更</h2>
+<p>HEXOのThemeはどれにするか迷うくらい公開されていて<br>以下のサイト確認できる<br><a href="http://js.romareas.net/demo/" target="_blank" rel="external">http://js.romareas.net/demo/</a> ← こっちはページ遷移が必要ないので見やすい<br><a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank" rel="external">https://github.com/hexojs/hexo/wiki/Themes</a></p>
+<p>テーマをインストールする</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone テーマのgitリポジトリ<span class="keyword">URL</span> themes/Theme名</div></pre></td></tr></table></figure>
+
+<p>_config.ymlにインストールしたテーマを記載する</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">theme</span>: <span class="string">Theme名</span></div><div class="line"><span class="attribute">exclude_generator:</span></div></pre></td></tr></table></figure>
+
+
+        </section>
+
+        <!-- <section class="post-excerpt">
+        <p>
+        
+            デプロイする
+123% hexo deploy -gor% hexo d -g
+
+-gで静的HTMLをpublicフォルダ内に生成してくれる
+新たに投稿する
+1% hexo new 'hexoについて'
+
+source/_postsフォルダに”hexoについて.md”というファイルが生成されるあとはこのファイルを編集して記事の詳細を書く
+テーマの変更
+HEXOのThemeはどれにするか迷うくらい公開されていて以下のサイト確認できるhtt
+            
+            </p>
+            
+                </section> -->
+    </article>
+    
+    <article class="post">
+
+        <header class="post-header">
+            <!-- <div class="tag-tile">
+            
+                <span class="fa fa-bookmark" style="float:right;color:#f39c12"></span>
+                </div> -->
+            <h1 class="post-title"><a data-pjax href="/2014/11/16/HEXOでブログ構築手順/">HEXOでブログ構築手順</a>
+            </h1>
+
+            <div class="post-meta">
+                Post on<span class="fa fa-clock-o"></span>
+                <time datetime="2014-11-16T06:46:06.000Z"
+                      itemprop="datePublished">Nov 16 2014</time>
+            </div>
+        </header>
+
+        <section class="post-content">
+            <p>今回ブログ構築で利用したブログ生成ツールHEXOの導入手順メモ。<br>基本的には以下サイトを参考にやってます<br><a href="http://liginc.co.jp/web/programming/server/104594" target="_blank" rel="external">http://liginc.co.jp/web/programming/server/104594</a></p>
+<h2 id="HEXOについて簡単に">HEXOについて簡単に</h2>
+<ul>
+<li>静的なブログサイトを構築するための環境</li>
+<li>javascript製でNode.jsの動作環境が必要</li>
+<li>MarkDown方式で投稿ができる</li>
+<li>開発サーバー機能があるのでローカルでの投稿チェック、UI改修ができる</li>
+<li>Themeやプラグインが豊富</li>
+</ul>
+<h2 id="1-_Node-jsを動作環境を準備">1. Node.jsを動作環境を準備</h2>
+<p>まずは、NVM（Node Version Manager）をインストールして、<br>nvmコマンドを読み込む</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">% git clone git://github.com/creationix/nvm.git ~/.nvm</div><div class="line">% <span class="built_in">source</span> ~/.nvm/nvm.sh</div></pre></td></tr></table></figure>
+
+<p>最新安定版の0.10.26のNode.jsをインストールして<br>デフォルト利用するNode.jsバージョンを設定する</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">% xnvm install v0.<span class="number">10.26</span></div><div class="line">% nvm alias default v0.<span class="number">10.26</span></div></pre></td></tr></table></figure>
+
+<p>デフォルトでnvmコマンドを利用できるよう以下を.zshrcへ追記</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span> <span class="string">[[ -s ~/.nvm/nvm.sh ]]</span>;</div><div class="line"> <span class="keyword">then</span> source ~/.nvm/nvm.sh</div><div class="line">fi</div></pre></td></tr></table></figure>
+
+<h2 id="2-_HEXOの導入">2. HEXOの導入</h2>
+<p>HEXOをインストールしてブログを生成</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">% npm install -g hexo</div><div class="line">% hexo init myblog</div><div class="line">% <span class="built_in">cd</span> myblog</div><div class="line">% npm install</div></pre></td></tr></table></figure>
+
+<p>初期設定のため、_config.ymlを編集</p>
+<figure class="highlight diff"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line"><span class="header">--- a/_config.yml</span></div><div class="line"><span class="header">+++ b/_config.yml</span></div><div class="line"><span class="chunk">@@ -3,16 +3,16 @@</span></div><div class="line"> ## Source: https://github.com/hexojs/hexo/</div><div class="line"></div><div class="line"> # Site</div><div class="line"><span class="deletion">-title: Hexo</span></div><div class="line"><span class="addition">+title: Fujimisakari</span></div><div class="line"> subtitle:</div><div class="line"> description:</div><div class="line"> author: John Doe</div><div class="line"><span class="deletion">-email:</span></div><div class="line"><span class="addition">+email: fujimisakari@gmail.com</span></div><div class="line"> language:</div><div class="line"></div><div class="line"> # URL</div><div class="line"> ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'</div><div class="line"><span class="deletion">-url: http://yoursite.com</span></div><div class="line"><span class="addition">+url: http://fujimisakari.github.io/</span></div><div class="line"> root: /</div><div class="line"> permalink: :year/:month/:day/:title/</div><div class="line"> tag_dir: tags</div><div class="line">@@ -79,10 +79,12 @@ disqus_shortname:</div><div class="line"></div><div class="line"> # Deployment</div><div class="line"> ## Docs: http://hexo.io/docs/deployment.html</div><div class="line"> deploy:</div><div class="line"><span class="deletion">-  type:</span></div><div class="line">\ No newline at end of file</div><div class="line"><span class="addition">+  type: github</span></div><div class="line"><span class="addition">+  repo: git@github.com:fujimisakari/fujimisakari.github.io.git</span></div><div class="line"><span class="addition">+  branch: master</span></div></pre></td></tr></table></figure>
+
+<p>これでブログ構築が完了。</p>
+
+        </section>
+
+        <!-- <section class="post-excerpt">
+        <p>
+        
+            今回ブログ構築で利用したブログ生成ツールHEXOの導入手順メモ。基本的には以下サイトを参考にやってますhttp://liginc.co.jp/web/programming/server/104594
+HEXOについて簡単に
+
+静的なブログサイトを構築するための環境
+javascript製でNode.jsの動作環境が必要
+MarkDown方式で投稿ができる
+開発サーバー機能があるのでローカルでの投稿チェック、UI改修ができる
+Theme
+            
+            </p>
+            
+                </section> -->
+    </article>
     
     <article class="post">
 
