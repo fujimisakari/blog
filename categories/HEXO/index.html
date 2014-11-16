@@ -15,6 +15,8 @@
   <script src="http://static.duoshuo.com/embed.js"></script>
   
   
+  <link rel="alternate" type="application/atom+xml" title="Fujimisakari" href="atom.xml">
+  
   
 
   
@@ -81,27 +83,27 @@
                             </ul>
                         </div>
                     </li>
-                    <li>
-                        <a class="fa fa-tags" href="#"><i class="fa fa-angle-left">
-                            </i>&nbsp;&nbsp;Tags</a>
-                        <div class="mp-level page-list">
-                            <h2 ><i class="fa fa-tags"></i>
-                                Tags</h2>
-                            <a class="mp-back" href="#">back</a>
-                            <form id="search-form" action="">
-                                <input type="text" class="search search-tag" placeholder="Search.."/>
-                            </form>
-                            <ul>
-                                <div class="mp-scroll">
-                                
-                                </div>
-                            </ul>
-                        </div>
-                    </li>
+                    <!-- <li>
+                    <a class="fa fa-tags" href="#"><i class="fa fa-angle-left">
+                    </i>&nbsp;&nbsp;Tags</a>
+                    <div class="mp-level page-list">
+                    <h2 ><i class="fa fa-tags"></i>
+                    Tags</h2>
+                    <a class="mp-back" href="#">back</a>
+                    <form id="search-form" action="">
+                    <input type="text" class="search search-tag" placeholder="Search.."/>
+                    </form>
+                    <ul>
+                    <div class="mp-scroll">
                     
-                    <li class="mp-pjax"><a class="fa fa-user" href="/about">&nbsp;&nbsp;&nbsp;About me</a></li>
-                    <li><a class="fa fa-github" href="#">&nbsp;&nbsp;&nbsp;Github</a></li>
-
+                    </div>
+                    </ul>
+                    </div>
+                    </li> -->
+                    
+                    <li><a class="fa fa-user" href="http://about.me/fujimisakari">&nbsp;&nbsp;&nbsp;About me</a></li>
+                    <li><a class="fa fa-github" href="https://github.com/fujimisakari">&nbsp;&nbsp;&nbsp;Github</a></li>
+                    <li><a class="fa fa-rss" href="/atom.xml">&nbsp;&nbsp;&nbsp;RSS</a></li>
                 </ul>
 
             </div>
@@ -146,7 +148,6 @@
             <div class="scroller">
             <div class="scroller-inner">
 
-
 <!-- -->
 <!--<body class="home-template">-->
 <!---->
@@ -183,10 +184,17 @@
 <h2 id="テーマの変更">テーマの変更</h2>
 <p>HEXOのThemeはどれにするか迷うくらい公開されていて<br>以下のサイト確認できる<br><a href="http://js.romareas.net/demo/" target="_blank" rel="external">http://js.romareas.net/demo/</a> ← こっちはページ遷移が必要ないので見やすい<br><a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank" rel="external">https://github.com/hexojs/hexo/wiki/Themes</a></p>
 <p>テーマをインストールする</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone テーマのgitリポジトリ<span class="keyword">URL</span> themes/Theme名</div></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="comment">% git clone テーマのgitリポジトリURL themes/Theme名</span></div></pre></td></tr></table></figure>
 
 <p>_config.ymlにインストールしたテーマを記載する</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">theme</span>: <span class="string">Theme名</span></div><div class="line"><span class="attribute">exclude_generator:</span></div></pre></td></tr></table></figure>
+
+<h2 id="RSS機能を付ける">RSS機能を付ける</h2>
+<p>hexo-generator-feedをインストールする</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">% npm <span class="operator"><span class="keyword">install</span> hexo-generator-feed <span class="comment">--save</span></span></div></pre></td></tr></table></figure>
+
+<p>_config.ymlに以下のオプションを追記。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">feed:</div><div class="line">    <span class="class"><span class="keyword">type</span>: <span class="title">atom</span></span></div><div class="line">    path: atom.xml</div><div class="line">    limit: <span class="number">20</span></div></pre></td></tr></table></figure>
 
 
         </section>
@@ -285,6 +293,8 @@ Theme
 
   
 <footer class="site-footer">
+    
+    <a class="subscribe icon-feed" href="atom.xml"><span class="tooltip">Subscribe!</span></a>
     
     <div class="inner">
         <section class="copyright"><a href="/"></a> &copy; Fujimisakari 2014</section>
