@@ -379,7 +379,7 @@ margin on the iframe, cause it breaks stuff. */
     position: relative;
     width:80%;
     max-width: 700px;
-    margin: 4rem auto;
+    margin: 6rem auto;
     padding-bottom: 4rem;
     border-bottom: #ddd 1.5px solid;
     word-break: break-word;

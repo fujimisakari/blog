@@ -3,13 +3,13 @@
 <main class="content" role="main">
     <article class="post" >
     <span class="post-meta">
-        <!-- <div class="tag-tile">
-        <% if (post.tags && post.tags.length){ %>
-            <% post.tags.forEach(function(tag) { %>
-            <a data-pjax href='<%= config.root + tag.path %>' style='color:#D5D5D5'><%= tag.name %></a>
-            <% }); %>
-            <% } %>
-            </div> -->
+        <div class="tag-tile">
+            <% if (post.tags && post.tags.length){ %>
+                <% post.tags.forEach(function(tag) { %>
+                <a data-pjax href='<%= config.root + tag.path %>' style='color:#D5D5D5'><%= tag.name %></a>
+                <% }); %>
+                <% } %>
+        </div>
         <h1 class="post-title" style="margin: 14px 0;color:#50585D"><%- post.title %></h1>
 
         <div class="post-meta">

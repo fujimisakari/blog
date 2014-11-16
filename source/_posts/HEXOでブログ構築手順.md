@@ -1,6 +1,6 @@
 title: HEXOでブログ構築手順
 date: 2014-11-16 15:46:06
-category: HEXO
+tags: HEXO
 
 ---
 

@@ -1,6 +1,6 @@
 title: HEXOの使い方
 date: 2014-11-16 21:40:40
-category: HEXO
+tags: HEXO
 
 ---
 

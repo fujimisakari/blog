@@ -75,48 +75,48 @@
                             </ul>
                         </div>
                     </li>
-                    <li>
-                        <a class="fa fa-copy" href="#"><i class="fa fa-angle-left">
-                            </i>&nbsp;&nbsp;Categories</a>
+                    <!-- <li>
+                    <a class="fa fa-copy" href="#"><i class="fa fa-angle-left">
+                    </i>&nbsp;&nbsp;Categories</a>
 
-                        <div class="mp-level page-list">
-                            <h2 ><i class="fa fa-copy"></i>
-                                Categories</h2>
-                            <a class="mp-back" href="#">back</a>
-                            <form id="search-form" action="">
-                                <input type="text" class="search search-category" placeholder="Search.."/>
-                            </form>
-                            <ul>
-                                <div class="mp-scroll">
-                                <% site.categories.sort('name').each(function(item){ %>
-                                <li class="search-category-li mp-pjax">
-                                    <a href="<%- config.root %><%- item.path %>">&nbsp;&nbsp;&nbsp;<%= item.name %></a>
-                                    <small><%= item.posts.length %></small>
-                                </li>
-                                <% }); %>
-                                </div>
-                            </ul>
-                        </div>
+                    <div class="mp-level page-list">
+                    <h2 ><i class="fa fa-copy"></i>
+                    Categories</h2>
+                    <a class="mp-back" href="#">back</a>
+                    <form id="search-form" action="">
+                    <input type="text" class="search search-category" placeholder="Search.."/>
+                    </form>
+                    <ul>
+                    <div class="mp-scroll">
+                    <% site.categories.sort('name').each(function(item){ %>
+                    <li class="search-category-li mp-pjax">
+                    <a href="<%- config.root %><%- item.path %>">&nbsp;&nbsp;&nbsp;<%= item.name %></a>
+                    <small><%= item.posts.length %></small>
                     </li>
+                    <% }); %>
+                    </div>
+                    </ul>
+                    </div>
+                    </li> -->
                     <li>
                         <a class="fa fa-tags" href="#"><i class="fa fa-angle-left">
                         </i>&nbsp;&nbsp;Tags</a>
                         <div class="mp-level page-list">
-                        <h2 ><i class="fa fa-tags"></i>Tags</h2>
-                        <a class="mp-back" href="#">back</a>
-                        <form id="search-form" action="">
-                            <input type="text" class="search search-tag" placeholder="Search.."/>
-                        </form>
-                        <ul>
-                            <div class="mp-scroll">
-                            <% site.tags.sort('name').each(function(item){ %>
-                            <li class="search-tag-li mp-pjax">
-                            <a href="<%- config.root %><%- item.path %>">&nbsp;&nbsp;&nbsp;<%= item.name %></a>
-                            <small><%= item.posts.length %></small>
-                            </li>
-                            <% }); %>
-                            </div>
-                        </ul>
+                            <h2 ><i class="fa fa-tags"></i>Tags</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-tag" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                    <% site.tags.sort('name').each(function(item){ %>
+                                    <li class="search-tag-li mp-pjax">
+                                        <a href="<%- config.root %><%- item.path %>">&nbsp;&nbsp;&nbsp;<%= item.name %></a>
+                                        <small><%= item.posts.length %></small>
+                                    </li>
+                                    <% }); %>
+                                </div>
+                            </ul>
                         </div>
                         </li>
                         <% if (theme.weibo_show) { %>
