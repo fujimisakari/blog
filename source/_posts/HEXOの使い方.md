@@ -27,10 +27,24 @@ https://github.com/hexojs/hexo/wiki/Themes
 
 テーマをインストールする
 ```
-git clone テーマのgitリポジトリURL themes/Theme名
+% git clone テーマのgitリポジトリURL themes/Theme名
 ```
 _config.ymlにインストールしたテーマを記載する
 ```
 theme: Theme名
 exclude_generator:
+```
+
+## RSS機能を付ける
+hexo-generator-feedをインストールする
+```
+% npm install hexo-generator-feed --save
+```
+
+_config.ymlに以下のオプションを追記。
+```
+feed:
+    type: atom
+    path: atom.xml
+    limit: 20
 ```

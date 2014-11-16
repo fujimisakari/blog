@@ -88,3 +88,9 @@ deploy:
   type: github
   repo: git@github.com:fujimisakari/fujimisakari.github.io.git
   branch: master
+
+# hexo-generator-feed
+feed:
+    type: atom
+    path: atom.xml
+    limit: 20
