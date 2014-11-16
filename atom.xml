@@ -4,11 +4,11 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://fujimisakari.github.io/"/>
-  <updated>2014-11-16T18:00:17.933Z</updated>
+  <updated>2014-11-16T19:38:08.144Z</updated>
   <id>http://fujimisakari.github.io/</id>
   
   <author>
-    <name><![CDATA[John Doe]]></name>
+    <name><![CDATA[Fujimisakari]]></name>
     <email><![CDATA[fujimisakari@gmail.com]]></email>
   </author>
   
@@ -19,7 +19,7 @@
     <link href="http://fujimisakari.github.io/2014/11/16/HEXO%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/"/>
     <id>http://fujimisakari.github.io/2014/11/16/HEXOの使い方/</id>
     <published>2014-11-16T12:40:40.000Z</published>
-    <updated>2014-11-16T17:19:33.000Z</updated>
+    <updated>2014-11-16T19:08:39.000Z</updated>
     <content type="html"><![CDATA[<h2 id="デプロイする">デプロイする</h2>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment">% hexo deploy -g</span></div><div class="line">or</div><div class="line"><span class="comment">% hexo d -g</span></div></pre></td></tr></table></figure>
 
@@ -49,7 +49,7 @@
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><]]>
     </summary>
     
-      <category term="HEXO" scheme="http://fujimisakari.github.io/categories/HEXO/"/>
+      <category term="HEXO" scheme="http://fujimisakari.github.io/tags/HEXO/"/>
     
   </entry>
   
@@ -58,7 +58,7 @@
     <link href="http://fujimisakari.github.io/2014/11/16/HEXO%E3%81%A6%E3%82%99%E3%83%95%E3%82%99%E3%83%AD%E3%82%AF%E3%82%99%E6%A7%8B%E7%AF%89%E6%89%8B%E9%A0%86/"/>
     <id>http://fujimisakari.github.io/2014/11/16/HEXOでブログ構築手順/</id>
     <published>2014-11-16T06:46:06.000Z</published>
-    <updated>2014-11-16T15:49:04.000Z</updated>
+    <updated>2014-11-16T19:08:45.000Z</updated>
     <content type="html"><![CDATA[<p>今回ブログ構築で利用したブログ生成ツールHEXOの導入手順メモ。<br>基本的には以下サイトを参考にやってます<br><a href="http://liginc.co.jp/web/programming/server/104594" target="_blank" rel="external">http://liginc.co.jp/web/programming/server/104594</a></p>
 <h2 id="HEXOについて簡単に">HEXOについて簡単に</h2>
 <ul>
@@ -91,7 +91,7 @@
     <![CDATA[<p>今回ブログ構築で利用したブログ生成ツールHEXOの導入手順メモ。<br>基本的には以下サイトを参考にやってます<br><a href="http://liginc.co.jp/web/programming/server/104594" target="_blank" re]]>
     </summary>
     
-      <category term="HEXO" scheme="http://fujimisakari.github.io/categories/HEXO/"/>
+      <category term="HEXO" scheme="http://fujimisakari.github.io/tags/HEXO/"/>
     
   </entry>
   
