@@ -3,16 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Fujimisakari
 subtitle:
 description:
 author: John Doe
-email:
+email: fujimisakari@gmail.com
 language:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://fujimisakari.github.io/
 root: /
 permalink: :year/:month/:day/:title/
 tag_dir: tags
@@ -79,10 +79,12 @@ disqus_shortname:
 # Extensions
 ## Plugins: https://github.com/hexojs/hexo/wiki/Plugins
 ## Themes: https://github.com/hexojs/hexo/wiki/Themes
-theme: landscape
+theme: my_theme
 exclude_generator:
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: github
+  repo: git@github.com:fujimisakari/fujimisakari.github.io.git
+  branch: master
