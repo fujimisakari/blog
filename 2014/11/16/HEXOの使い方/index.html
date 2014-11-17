@@ -194,27 +194,27 @@
 
     <section class="post-content">
         <h2 id="デプロイする">デプロイする</h2>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment">% hexo deploy -g</span></div><div class="line">or</div><div class="line"><span class="comment">% hexo d -g</span></div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment">% hexo deploy -g</span></div><div class="line">or</div><div class="line"><span class="comment">% hexo d -g</span></div></pre></td></tr></table></figure>
 
 <p>-gで静的HTMLをpublicフォルダ内に生成してくれる</p>
 <h2 id="新たに投稿する">新たに投稿する</h2>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">% hexo <span class="keyword">new</span> <span class="string">'hexoについて'</span></div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">% hexo <span class="keyword">new</span> <span class="string">'hexoについて'</span></div></pre></td></tr></table></figure>
 
 <p>source/_postsフォルダに”hexoについて.md”というファイルが生成される<br>あとはこのファイルを編集して記事の詳細を書く</p>
 <h2 id="テーマの変更">テーマの変更</h2>
 <p>HEXOのThemeはどれにするか迷うくらい公開されていて<br>以下のサイト確認できる<br><a href="http://js.romareas.net/demo/" target="_blank" rel="external">http://js.romareas.net/demo/</a> ← こっちはページ遷移が必要ないので見やすい<br><a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank" rel="external">https://github.com/hexojs/hexo/wiki/Themes</a></p>
 <p>テーマをインストールする</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="comment">% git clone テーマのgitリポジトリURL themes/Theme名</span></div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="comment">% git clone テーマのgitリポジトリURL themes/Theme名</span></div></pre></td></tr></table></figure>
 
 <p>_config.ymlにインストールしたテーマを記載する</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">theme</span>: <span class="string">Theme名</span></div><div class="line"><span class="attribute">exclude_generator:</span></div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">theme</span>: <span class="string">Theme名</span></div><div class="line"><span class="attribute">exclude_generator:</span></div></pre></td></tr></table></figure>
 
 <h2 id="RSS機能を付ける">RSS機能を付ける</h2>
 <p>hexo-generator-feedをインストールする</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">% npm <span class="operator"><span class="keyword">install</span> hexo-generator-feed <span class="comment">--save</span></span></div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">% npm <span class="operator"><span class="keyword">install</span> hexo-generator-feed <span class="comment">--save</span></span></div></pre></td></tr></table></figure>
 
 <p>_config.ymlに以下のオプションを追記。</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">feed:</div><div class="line">    <span class="class"><span class="keyword">type</span>: <span class="title">atom</span></span></div><div class="line">    path: atom.xml</div><div class="line">    limit: <span class="number">20</span></div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">feed:</div><div class="line">    <span class="class"><span class="keyword">type</span>: <span class="title">atom</span></span></div><div class="line">    path: atom.xml</div><div class="line">    limit: <span class="number">20</span></div></pre></td></tr></table></figure>
 
 
     </section>

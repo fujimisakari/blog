@@ -198,27 +198,27 @@
 
         <section class="post-content">
             <h2 id="デプロイする">デプロイする</h2>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment">% hexo deploy -g</span></div><div class="line">or</div><div class="line"><span class="comment">% hexo d -g</span></div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment">% hexo deploy -g</span></div><div class="line">or</div><div class="line"><span class="comment">% hexo d -g</span></div></pre></td></tr></table></figure>
 
 <p>-gで静的HTMLをpublicフォルダ内に生成してくれる</p>
 <h2 id="新たに投稿する">新たに投稿する</h2>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">% hexo <span class="keyword">new</span> <span class="string">'hexoについて'</span></div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">% hexo <span class="keyword">new</span> <span class="string">'hexoについて'</span></div></pre></td></tr></table></figure>
 
 <p>source/_postsフォルダに”hexoについて.md”というファイルが生成される<br>あとはこのファイルを編集して記事の詳細を書く</p>
 <h2 id="テーマの変更">テーマの変更</h2>
 <p>HEXOのThemeはどれにするか迷うくらい公開されていて<br>以下のサイト確認できる<br><a href="http://js.romareas.net/demo/" target="_blank" rel="external">http://js.romareas.net/demo/</a> ← こっちはページ遷移が必要ないので見やすい<br><a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank" rel="external">https://github.com/hexojs/hexo/wiki/Themes</a></p>
 <p>テーマをインストールする</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="comment">% git clone テーマのgitリポジトリURL themes/Theme名</span></div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="comment">% git clone テーマのgitリポジトリURL themes/Theme名</span></div></pre></td></tr></table></figure>
 
 <p>_config.ymlにインストールしたテーマを記載する</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">theme</span>: <span class="string">Theme名</span></div><div class="line"><span class="attribute">exclude_generator:</span></div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">theme</span>: <span class="string">Theme名</span></div><div class="line"><span class="attribute">exclude_generator:</span></div></pre></td></tr></table></figure>
 
 <h2 id="RSS機能を付ける">RSS機能を付ける</h2>
 <p>hexo-generator-feedをインストールする</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">% npm <span class="operator"><span class="keyword">install</span> hexo-generator-feed <span class="comment">--save</span></span></div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">% npm <span class="operator"><span class="keyword">install</span> hexo-generator-feed <span class="comment">--save</span></span></div></pre></td></tr></table></figure>
 
 <p>_config.ymlに以下のオプションを追記。</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">feed:</div><div class="line">    <span class="class"><span class="keyword">type</span>: <span class="title">atom</span></span></div><div class="line">    path: atom.xml</div><div class="line">    limit: <span class="number">20</span></div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">feed:</div><div class="line">    <span class="class"><span class="keyword">type</span>: <span class="title">atom</span></span></div><div class="line">    path: atom.xml</div><div class="line">    limit: <span class="number">20</span></div></pre></td></tr></table></figure>
 
 
         </section>
@@ -273,19 +273,19 @@ HEXOのThemeはどれにするか迷うくらい公開されていて以下の�
 <li>開発サーバー機能があるのでローカルでの投稿チェック、UI改修ができる</li>
 <li>Themeやプラグインが豊富</li>
 </ul>
-<h2 id="1-_Node-jsを動作環境を準備">1. Node.jsを動作環境を準備</h2>
+<h2 id="Node-jsを動作環境を準備">Node.jsを動作環境を準備</h2>
 <p>まずは、NVM（Node Version Manager）をインストールして、<br>nvmコマンドを読み込む</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">% git clone git://github.com/creationix/nvm.git ~/.nvm</div><div class="line">% <span class="built_in">source</span> ~/.nvm/nvm.sh</div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">% git clone gi<span class="variable">t:</span>//github.<span class="keyword">com</span>/creationix/nvm.git ~/.nvm</div><div class="line">% <span class="keyword">source</span> ~/.nvm/nvm.<span class="keyword">sh</span></div></pre></td></tr></table></figure>
 
 <p>最新安定版の0.10.26のNode.jsをインストールして<br>デフォルト利用するNode.jsバージョンを設定する</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">% xnvm install v0.<span class="number">10.26</span></div><div class="line">% nvm alias default v0.<span class="number">10.26</span></div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">% nvm install v0.10.26</span></div><div class="line"><span class="comment">% nvm alias default v0.10.26</span></div></pre></td></tr></table></figure>
 
 <p>デフォルトでnvmコマンドを利用できるよう以下を.zshrcへ追記</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span> <span class="string">[[ -s ~/.nvm/nvm.sh ]]</span>;</div><div class="line"> <span class="keyword">then</span> source ~/.nvm/nvm.sh</div><div class="line">fi</div></pre></td></tr></table></figure>
 
-<h2 id="2-_HEXOの導入">2. HEXOの導入</h2>
+<h2 id="HEXOの導入">HEXOの導入</h2>
 <p>HEXOをインストールしてブログを生成</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">% npm install -g hexo</div><div class="line">% hexo init myblog</div><div class="line">% <span class="built_in">cd</span> myblog</div><div class="line">% npm install</div></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment">% npm install -g hexo</span></div><div class="line"><span class="comment">% hexo init myblog</span></div><div class="line"><span class="comment">% cd myblog</span></div><div class="line"><span class="comment">% npm install</span></div></pre></td></tr></table></figure>
 
 <p>初期設定のため、_config.ymlを編集</p>
 <figure class="highlight diff"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line"><span class="header">--- a/_config.yml</span></div><div class="line"><span class="header">+++ b/_config.yml</span></div><div class="line"><span class="chunk">@@ -3,16 +3,16 @@</span></div><div class="line"> ## Source: https://github.com/hexojs/hexo/</div><div class="line"></div><div class="line"> # Site</div><div class="line"><span class="deletion">-title: Hexo</span></div><div class="line"><span class="addition">+title: Fujimisakari</span></div><div class="line"> subtitle:</div><div class="line"> description:</div><div class="line"> author: John Doe</div><div class="line"><span class="deletion">-email:</span></div><div class="line"><span class="addition">+email: fujimisakari@gmail.com</span></div><div class="line"> language:</div><div class="line"></div><div class="line"> # URL</div><div class="line"> ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'</div><div class="line"><span class="deletion">-url: http://yoursite.com</span></div><div class="line"><span class="addition">+url: http://fujimisakari.github.io/</span></div><div class="line"> root: /</div><div class="line"> permalink: :year/:month/:day/:title/</div><div class="line"> tag_dir: tags</div><div class="line">@@ -79,10 +79,12 @@ disqus_shortname:</div><div class="line"></div><div class="line"> # Deployment</div><div class="line"> ## Docs: http://hexo.io/docs/deployment.html</div><div class="line"> deploy:</div><div class="line"><span class="deletion">-  type:</span></div><div class="line">\ No newline at end of file</div><div class="line"><span class="addition">+  type: github</span></div><div class="line"><span class="addition">+  repo: git@github.com:fujimisakari/fujimisakari.github.io.git</span></div><div class="line"><span class="addition">+  branch: master</span></div></pre></td></tr></table></figure>
