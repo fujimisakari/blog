@@ -5,7 +5,7 @@ tags: HEXO
 ---
 
 ## デプロイする
-```
+``` shell
 % hexo deploy -g
 or
 % hexo d -g
@@ -13,7 +13,7 @@ or
 -gで静的HTMLをpublicフォルダ内に生成してくれる
 
 ## 新たに投稿する
-```
+``` shell
 % hexo new 'hexoについて'
 ```
 source/_postsフォルダに"hexoについて.md"というファイルが生成される
@@ -26,23 +26,23 @@ http://js.romareas.net/demo/ ← こっちはページ遷移が必要ないの�
 https://github.com/hexojs/hexo/wiki/Themes
 
 テーマをインストールする
-```
+``` shell
 % git clone テーマのgitリポジトリURL themes/Theme名
 ```
 _config.ymlにインストールしたテーマを記載する
-```
+``` shell
 theme: Theme名
 exclude_generator:
 ```
 
 ## RSS機能を付ける
 hexo-generator-feedをインストールする
-```
+``` shell
 % npm install hexo-generator-feed --save
 ```
 
 _config.ymlに以下のオプションを追記。
-```
+``` shell
 feed:
     type: atom
     path: atom.xml

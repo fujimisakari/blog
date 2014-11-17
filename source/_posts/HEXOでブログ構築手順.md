@@ -17,19 +17,19 @@ http://liginc.co.jp/web/programming/server/104594
 - Themeやプラグインが豊富
 
 
-## 1. Node.jsを動作環境を準備
+## Node.jsを動作環境を準備
 
 まずは、NVM（Node Version Manager）をインストールして、
 nvmコマンドを読み込む
-``` bash
+``` shell
 % git clone git://github.com/creationix/nvm.git ~/.nvm
 % source ~/.nvm/nvm.sh
 ```
 
 最新安定版の0.10.26のNode.jsをインストールして
 デフォルト利用するNode.jsバージョンを設定する
-```bash
-% xnvm install v0.10.26
+``` shell
+% nvm install v0.10.26
 % nvm alias default v0.10.26
 ```
 
@@ -40,10 +40,10 @@ if [[ -s ~/.nvm/nvm.sh ]];
 fi
 
 ```
-## 2. HEXOの導入
+## HEXOの導入
 
 HEXOをインストールしてブログを生成
-```bash
+``` shell
 % npm install -g hexo
 % hexo init myblog
 % cd myblog
