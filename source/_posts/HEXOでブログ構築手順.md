@@ -19,15 +19,13 @@ http://liginc.co.jp/web/programming/server/104594
 
 ## Node.jsを動作環境を準備
 
-まずは、NVM（Node Version Manager）をインストールして、
-nvmコマンドを読み込む
+まずは、NVM（Node Version Manager）をインストールして、nvmコマンドを読み込む
 ``` shell
 % git clone git://github.com/creationix/nvm.git ~/.nvm
 % source ~/.nvm/nvm.sh
 ```
 
-最新安定版の0.10.26のNode.jsをインストールして
-デフォルト利用するNode.jsバージョンを設定する
+最新安定版の0.10.26のNode.jsをインストールして、デフォルト利用するNode.jsバージョンを設定する
 ``` shell
 % nvm install v0.10.26
 % nvm alias default v0.10.26

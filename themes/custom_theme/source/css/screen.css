@@ -84,9 +84,9 @@ h1 {
 
 h2 {
     font-size: 2.75rem;
+    margin-top: 45px;
     line-height: 1.5em;
     border-bottom: 1px solid #eee;
-
 }
 
 h3 {
@@ -355,12 +355,13 @@ margin on the iframe, cause it breaks stuff. */
 
 /* The details of your blog. Defined in ghost/settings/ */
 .blog-title {
-    margin: 10px 0 10px 0;
-    font-size: 5rem;
+    margin: 10px 0 80px 0;
+    font-size: 8rem;
     letter-spacing: -1px;
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
-    text-shadow: 0 1px 6px rgba(0,0,0,0.1);
+    text-shadow: 5px 15px 5px rgba(0,0,0,0.1);
+    text-align: center;
 }
 
 .blog-description {
@@ -378,7 +379,7 @@ margin on the iframe, cause it breaks stuff. */
 .post {
     position: relative;
     width:80%;
-    max-width: 700px;
+    max-width: 1200px;
     margin: 6rem auto;
     padding-bottom: 4rem;
     border-bottom: #ddd 1.5px solid;

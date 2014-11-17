@@ -5,6 +5,8 @@
 rss: /atom.xml
 
 # enter your weibo ID
-weibo_show:  
+weibo_show:
 
 scroll_spy: true
+
+blog_title: Fujimisakari Blog
