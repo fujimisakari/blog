@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://fujimisakari.github.io/"/>
-  <updated>2014-11-17T15:48:19.898Z</updated>
+  <updated>2014-11-17T18:00:40.926Z</updated>
   <id>http://fujimisakari.github.io/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://fujimisakari.github.io/2014/11/16/HEXO%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/"/>
     <id>http://fujimisakari.github.io/2014/11/16/HEXOの使い方/</id>
     <published>2014-11-16T12:40:40.000Z</published>
-    <updated>2014-11-17T15:11:49.000Z</updated>
+    <updated>2014-11-17T16:38:14.000Z</updated>
     <content type="html"><![CDATA[<h2 id="デプロイする">デプロイする</h2>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment">% hexo deploy -g</span></div><div class="line">or</div><div class="line"><span class="comment">% hexo d -g</span></div></pre></td></tr></table></figure>
 
@@ -58,7 +58,7 @@
     <link href="http://fujimisakari.github.io/2014/11/16/HEXO%E3%81%A6%E3%82%99%E3%83%95%E3%82%99%E3%83%AD%E3%82%AF%E3%82%99%E6%A7%8B%E7%AF%89%E6%89%8B%E9%A0%86/"/>
     <id>http://fujimisakari.github.io/2014/11/16/HEXOでブログ構築手順/</id>
     <published>2014-11-16T06:46:06.000Z</published>
-    <updated>2014-11-17T15:42:21.000Z</updated>
+    <updated>2014-11-17T16:35:56.000Z</updated>
     <content type="html"><![CDATA[<p>今回ブログ構築で利用したブログ生成ツールHEXOの導入手順メモ。<br>基本的には以下サイトを参考にやってます<br><a href="http://liginc.co.jp/web/programming/server/104594" target="_blank" rel="external">http://liginc.co.jp/web/programming/server/104594</a></p>
 <h2 id="HEXOについて簡単に">HEXOについて簡単に</h2>
 <ul>
@@ -69,10 +69,10 @@
 <li>Themeやプラグインが豊富</li>
 </ul>
 <h2 id="Node-jsを動作環境を準備">Node.jsを動作環境を準備</h2>
-<p>まずは、NVM（Node Version Manager）をインストールして、<br>nvmコマンドを読み込む</p>
+<p>まずは、NVM（Node Version Manager）をインストールして、nvmコマンドを読み込む</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">% git clone gi<span class="variable">t:</span>//github.<span class="keyword">com</span>/creationix/nvm.git ~/.nvm</div><div class="line">% <span class="keyword">source</span> ~/.nvm/nvm.<span class="keyword">sh</span></div></pre></td></tr></table></figure>
 
-<p>最新安定版の0.10.26のNode.jsをインストールして<br>デフォルト利用するNode.jsバージョンを設定する</p>
+<p>最新安定版の0.10.26のNode.jsをインストールして、デフォルト利用するNode.jsバージョンを設定する</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">% nvm install v0.10.26</span></div><div class="line"><span class="comment">% nvm alias default v0.10.26</span></div></pre></td></tr></table></figure>
 
 <p>デフォルトでnvmコマンドを利用できるよう以下を.zshrcへ追記</p>
@@ -100,14 +100,16 @@
     <link href="http://fujimisakari.github.io/2014/11/16/%E3%83%95%E3%82%99%E3%83%AD%E3%82%AF%E3%82%99%E3%82%92%E9%96%8B%E8%A8%AD%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/"/>
     <id>http://fujimisakari.github.io/2014/11/16/ブログを開設しました/</id>
     <published>2014-11-16T03:47:26.000Z</published>
-    <updated>2014-11-16T05:31:50.000Z</updated>
-    <content type="html"><![CDATA[<p>これまで、hatena → Qittaで技術ネタを投稿する場所を<br>変えてきたけど、こちらをメインで活動することにしました</p>
-<p>hatenaはEmacsから投稿できなくなったタイミングでQittaに変えて<br>Qittaはストック数で記事のニーズがわかるので気に入ってたけど<br>個人的な技術メモ書くつもりが、誰かに見せる前提で書く意識が<br>出てしまうので、もっとカジュアルに投稿したくてこのブログを始めました。<br>今後は、技術ネタ以外も書いていこうかと思います。</p>
+    <updated>2014-11-17T16:39:47.000Z</updated>
+    <content type="html"><![CDATA[<p>これまで、hatena → Qittaで技術ネタを投稿する場所を変えてきたけど、<br>こちらをメインで活動することにしました</p>
+<p>hatenaはEmacsから投稿できなくなったタイミングでQittaに変えて<br>Qittaはストック数で記事のニーズがわかるので気に入ってたけど<br>個人的な技術メモ書くつもりが、誰かに見せる前提で書く意識が出てしまうので、<br>もっとカジュアルに投稿したくてこのブログを始めました。<br>今後は、技術ネタ以外も書いていこうかと思います。</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>これまで、hatena → Qittaで技術ネタを投稿する場所を<br>変えてきたけど、こちらをメインで活動することにしました</p>
+    <![CDATA[<p>これまで、hatena → Qittaで技術ネタを投稿する場所を変えてきたけど、<br>こちらをメインで活動することにしました</p>
 <p>hatenaはEmacsから投稿できなくなったタイミングでQittaに変えて<br>Qittaはストック数で記事のニーズがわかるので]]>
     </summary>
+    
+      <category term="life" scheme="http://fujimisakari.github.io/tags/life/"/>
     
   </entry>
   

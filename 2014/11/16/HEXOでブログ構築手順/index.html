@@ -28,8 +28,9 @@
         <i id="scroll-up" class="fa fa-angle-up"></i>
         <nav id="mp-menu" class="mp-menu">
             <div class="mp-level">
-                <a data-pjax class="back-home" style="font-size: 20px" href="/"><h2 ><i class="fa fa-home"></i>
-                        Home</h2></a>
+                <a data-pjax class="" style="font-size: 20px" href="/">
+                    <h2 ><i class="fa fa-home"></i>Home</h2>
+                </a>
                 <ul class="first-level">
                     <li>
                         <a class="fa fa-archive" href="#"><i class="fa fa-angle-left">
@@ -110,6 +111,11 @@
                                         <small>0</small>
                                     </li>
                                     
+                                    <li class="search-tag-li mp-pjax">
+                                        <a href="/tags/life/">&nbsp;&nbsp;&nbsp;life</a>
+                                        <small>1</small>
+                                    </li>
+                                    
                                 </div>
                             </ul>
                         </div>
@@ -141,13 +147,15 @@
                 
                     <a data-pjax href="/tags/PS3/">&nbsp;&nbsp;PS3</a>
                 
+                    <a data-pjax href="/tags/life/">&nbsp;&nbsp;life</a>
+                
                 <a data-pjax class="fa fa-user" href="/about">&nbsp;&nbsp;&nbsp;About me</a>
             </div>
             <nav class="nexus">
                 <li  style="border-left: 1px solid #c6d0da;">
                     <a id="trigger" href="#"><i class="fa fa-bars"></i></a>
                 </li>
-                <li ><a id="nexus-back" data-pjax href="/">Fujimisakari</a></li>
+                <!-- <li ><a id="nexus-back" data-pjax href="/">Fujimisakari</a></li> -->
                 
                 <div id="nav-container">
                     <div class="post-navbar" style="line-height: 63px;display:none">
@@ -203,10 +211,10 @@
 <li>Themeやプラグインが豊富</li>
 </ul>
 <h2 id="Node-jsを動作環境を準備">Node.jsを動作環境を準備</h2>
-<p>まずは、NVM（Node Version Manager）をインストールして、<br>nvmコマンドを読み込む</p>
+<p>まずは、NVM（Node Version Manager）をインストールして、nvmコマンドを読み込む</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">% git clone gi<span class="variable">t:</span>//github.<span class="keyword">com</span>/creationix/nvm.git ~/.nvm</div><div class="line">% <span class="keyword">source</span> ~/.nvm/nvm.<span class="keyword">sh</span></div></pre></td></tr></table></figure>
 
-<p>最新安定版の0.10.26のNode.jsをインストールして<br>デフォルト利用するNode.jsバージョンを設定する</p>
+<p>最新安定版の0.10.26のNode.jsをインストールして、デフォルト利用するNode.jsバージョンを設定する</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">% nvm install v0.10.26</span></div><div class="line"><span class="comment">% nvm alias default v0.10.26</span></div></pre></td></tr></table></figure>
 
 <p>デフォルトでnvmコマンドを利用できるよう以下を.zshrcへ追記</p>
