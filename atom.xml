@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title><![CDATA[Fujimisakari]]></title>
+  <title><![CDATA[Fujimisakari Blog]]></title>
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://fujimisakari.github.io/"/>
-  <updated>2014-11-17T18:00:40.926Z</updated>
+  <updated>2014-11-17T18:09:51.807Z</updated>
   <id>http://fujimisakari.github.io/</id>
   
   <author>
