@@ -10,6 +10,10 @@ author: fujimisakari
 email: fujimisakari@gmail.com
 language:
 
+# my site
+about_me: http://about.me/fujimisakari
+github: https://github.com/fujimisakari
+
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://fujimisakari.github.io/
@@ -74,7 +78,7 @@ per_page: 5
 pagination_dir: page
 
 # Disqus
-disqus_shortname:
+disqus_shortname: fujimisakari
 
 # Extensions
 ## Plugins: https://github.com/hexojs/hexo/wiki/Plugins

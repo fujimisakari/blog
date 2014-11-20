@@ -4,6 +4,8 @@
 # Miscellaneous
 rss: /atom.xml
 
+favicon: image/favicon.ico
+
 # enter your weibo ID
 weibo_show:
 
