@@ -88,10 +88,20 @@ exclude_generator:
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
+# deploy:
+#   type: github
+#   repo: git@github.com:fujimisakari/fujimisakari.github.io.git
+#   branch: master
+
 deploy:
-  type: github
-  repo: git@github.com:fujimisakari/fujimisakari.github.io.git
-  branch: master
+  type: rsync
+  host: blog.fujimisakari.com
+  user: www-data
+  root: /var/www/blog
+  port: 22
+  delete: true
+  verbose: true
+  ignore_errors: false
 
 # hexo-generator-feed
 feed:
