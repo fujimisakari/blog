@@ -374,6 +374,13 @@ margin on the iframe, cause it breaks stuff. */
     text-shadow: 0 1px 3px rgba(0,0,0,0.15);
 }
 
+.disqus {
+    position: relative;
+    width:80%;
+    max-width: 1200px;
+    margin: 6rem auto;
+}
+
 /* Every post, on every page, gets this style on its <article> tag */
 .after-post,
 .post {
