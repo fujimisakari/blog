@@ -537,7 +537,7 @@ margin on the iframe, cause it breaks stuff. */
 .post-content img {
     display: block;
     max-width: 100%;
-    margin: 0 auto;
+    margin: 0;
     height: auto;
 }
 
@@ -743,9 +743,9 @@ pre .string {color: #ff2600;}
 pre .keyword {color: #fefb00;}
 pre .params {color: #ccc;}
 
-figure.highlight.lisp .title {color: #ccc;}
-figure.highlight.lisp .quoted {color: #ccc;}
-figure.highlight.lisp .list {color: #ccc;}
+figure.highlight.el .title {color: #ccc;}
+figure.highlight.el .quoted {color: #ccc;}
+figure.highlight.el .list {color: #ccc;}
 
 figure.highlight.shell .title {color: #ccc;}
 figure.highlight.shell .comment {color: #ccc;}
