@@ -10,3 +10,5 @@ favicon: image/favicon.ico
 weibo_show:
 
 scroll_spy: true
+
+google_analytics: true

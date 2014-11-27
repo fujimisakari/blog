@@ -23,12 +23,12 @@ Eclipseの機能が使用することができるようになる
 
 ## 開発環境
 - MBA(10.10 Yosemite)
-- java SE 1.8
+- JDK 1.8
 - GNU Emacs 24.3.50.1
 - Eclipse Luna(4.4.0)
 
 ## インストール
-**javaとEclips、ビルドツールのantをインストール**
+**JDKとEclips、ビルドツールのantをインストール**
 ```
 $ brew cask install java
 $ brew cask install eclipse-java
