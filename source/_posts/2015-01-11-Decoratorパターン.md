@@ -26,7 +26,7 @@ ConcreteDecoratorA, B :　具象クラスに機能の拡張(飾り付け)を行�
 ## サンプル
 コーヒーにトッピングを入れて注文した場合
 
-・飲み物
+・飲み物(Component)
 ``` java
 public abstract class Beverage {
 	String description = "不明な飲み物";
@@ -39,7 +39,7 @@ public abstract class Beverage {
 }
 ```
 
-・コーヒー_ダークロースト
+・コーヒー_ダークロースト(ConcreteComponent)
 ``` java
 public class DarkRoast extends Beverage {
 
@@ -53,7 +53,7 @@ public class DarkRoast extends Beverage {
 }
 ```
 
-・デコレータ
+・デコレータ(Decorator)
 ``` java
 public abstract class CondimentDecorator extends Beverage {
 	// Beverage.getDescriptionがabstractになってないので再定義
@@ -61,7 +61,7 @@ public abstract class CondimentDecorator extends Beverage {
 }
 ```
 
-・トッピング_ホイップ
+・トッピング_ホイップ(ConcreteDecoratorA)
 ``` java
 public class Whip extends CondimentDecorator {
 
@@ -81,7 +81,7 @@ public class Whip extends CondimentDecorator {
 }
 ```
 
-・トッピング_ミルク
+・トッピング_ミルク(ConcreteDecoratorB)
 ``` java
 public class Milk extends CondimentDecorator {
 

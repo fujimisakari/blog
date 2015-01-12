@@ -17,7 +17,7 @@ tags: DesignPatterns
 
 
 ## パターン構造
-![factorymethod_pattern](/image/DesignPattern/factorymethod.jpg)
+![factorymethod_pattern](/image/DesignPattern/abstractfactory.jpg)
 **構成要素**
 Product :　生成されるオブジェクト（製品）のAPIを定義する抽象クラス。製品の具象クラスが抽象クラスで使用できるようにする
 ConcreteProduct :　生成される具象製品クラス
@@ -28,7 +28,7 @@ ConcreteCreator	:　ファクトリメソッドを実装し実際に製品を作
 ## サンプル
 ピザ店でチーズピザと野菜ピザを作る場合
 
-・抽象ピザ店クラス
+・抽象ピザ店クラス(Creator)
 ``` java
 public abstract class PizzaStore {
  
@@ -46,7 +46,7 @@ public abstract class PizzaStore {
 }
 ```
 
-・具象ピザ店クラス
+・具象ピザ店クラス(ConcreteCreator)
 ``` java
 public class NYPizzaStore extends PizzaStore {
 
@@ -60,7 +60,7 @@ public class NYPizzaStore extends PizzaStore {
 }
 ```
 
-・抽象ピザクラス
+・抽象ピザクラス(Product)
 ``` java
 public abstract class Pizza {
 	String name;
@@ -107,7 +107,7 @@ public abstract class Pizza {
 }
 ```
 
-・具象ピザクラス1
+・具象ピザクラス1(ConcreteProductA)
 ``` java
 public class NYStyleCheesePizza extends Pizza {
 
@@ -121,7 +121,7 @@ public class NYStyleCheesePizza extends Pizza {
 }
 ```
 
-・具象ピザクラス2
+・具象ピザクラス2(ConcreteProductB)
 ``` java
 public class NYStyleVeggiePizza extends Pizza {
 
