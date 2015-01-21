@@ -15,7 +15,7 @@ tags: DesignPatterns
 
 
 ## パターン構造
-![decorator_pattern](/image/DesignPattern/decorator.jpg)
+![decorator_pattern](/image/DesignPattern/decorator.png)
 **構成要素**
 Component :　拡張される機能を定義した抽象クラス(abstractかinterfaceを利用する)
 ConcreteComponent :　Componentクラスで定義した機能を基本実装する、装飾される具象クラス。

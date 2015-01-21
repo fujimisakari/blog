@@ -14,7 +14,7 @@ tags: DesignPatterns
 
 
 ## パターン構造
-![abstractfactory_pattern](/image/DesignPattern/abstractfactory.jpg)
+![abstractfactory_pattern](/image/DesignPattern/abstractfactory.png)
 **構成要素**
 AbstractFactory :　製品を生成するための抽象メソッドを定義するクラスです。
 ConcreteFactory :　生成メソッドを実装するクラス。ここには、具体的な製品であるConcreteProductクラスを返す

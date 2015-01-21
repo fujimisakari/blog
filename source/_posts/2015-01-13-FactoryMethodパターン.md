@@ -17,7 +17,7 @@ tags: DesignPatterns
 
 
 ## パターン構造
-![factorymethod_pattern](/image/DesignPattern/abstractfactory.jpg)
+![factorymethod_pattern](/image/DesignPattern/abstractfactory.png)
 **構成要素**
 Product :　生成されるオブジェクト（製品）のAPIを定義する抽象クラス。製品の具象クラスが抽象クラスで使用できるようにする
 ConcreteProduct :　生成される具象製品クラス

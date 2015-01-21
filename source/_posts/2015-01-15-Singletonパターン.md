@@ -13,7 +13,7 @@ tags: DesignPatterns
 
 
 ## パターン構造
-![singleton_pattern](/image/DesignPattern/singleton.jpg)
+![singleton_pattern](/image/DesignPattern/singleton.png)
 **構成要素**
 uniqueInstance :　getInstanceで生成されたインスタンスを保持しておく静的な変数。
 Singleton(コンストラクタ) :　スコープをprivateに定義し、getInstanceからのみ生成できるようにする。
