@@ -19,18 +19,21 @@ tags:
 - rainbow-delimiters
 - swap-window-positions
 - bm-goto
+- anzu
 - ace-jump
 
+
 ## highlight-symbol
-これは三拍子揃ってるelispでと思っており、とても重宝してます。
+三拍子揃ってるelispと思っており、とても重宝してます。
 機能としては、カーソル中のシンボルにハイライト(背景色)を設定してくれ、同じシンボル名であればジャンプ移動が可能です。
 
 <img src="/image/emacs/highlight-symbol.gif" width="720" height="420" />
 
 **所感**
-よく使ってるケースとしては以下があります。
-コード読むときであれば、変数をハイライトしてどの辺で変数が利用されてるかヒントとして使っています。
-コード書くときであれば、ロジック思考中に利用されてる変数をハイライトしていき視覚から頭を整理するときに利用します。
+これを使いだしたらプログラミング効率がかなり上がったと思います。
+よく利用しているケースとしては以下があります。
+コード読むときであれば、変数をハイライトしてどの辺で変数が利用されてるかヒントとして使っています。あとバグ探しとかで。
+コード書くときであれば、ロジック思考中に利用されてる変数をハイライトして視覚から頭を整理するときに利用します。
 ペアプロしてるときであれば、説明しながらハイライトして相手に伝えていきます。
 
 **設定**
@@ -41,14 +44,14 @@ tags:
 ```
 
 ## expand-region
-こいつは地味に便利です。
 カーソル中のシンボルを一瞬でリージョン選択してくれます。
 
 <img src="/image/emacs/expand-region.gif" width="881" height="120" />
 
 **所感**
-リージョン選択から、文字列をコピー or 上書きだったり、ほかのelispと連動させるためだったりと
-いろんなユースケースで利用できます。
+リージョン選択から文字列をコピー or 上書きだったり
+他のelispと連動させるためだったりといろんなユースケースで利用できます。
+入れるだけで必ず効率化に繋がると思います.
 
 **設定**
 ```lisp
@@ -57,13 +60,13 @@ tags:
 ```
 
 ## クォートやブラッケットを一括で括る
-リージョン選択しているシンボルに対して、シングルクォート or ダブルクォート or 丸括弧 or 角括弧で括ることができます。
+リージョン選択しているシンボルに対して、シングルクォート or ダブルクォート or 丸括弧 or 角括弧を一括で括ることができます。
 
 <img src="/image/emacs/quote-bracket.gif" width="881" height="120" />
 
 **所感**
-これは標準でありそうと思いきやなさそうでしたので自前で用意しました
-expand-regionでリージョン選択して利用する流れでプログラム書くとき全般に使えます。
+これは標準でありそうと思いきや無さそうでしたので自前で用意しました
+expand-regionから連動してプログラム書くとき全般に使ってます。
 
 **設定**
 ```lisp
@@ -100,26 +103,26 @@ expand-regionでリージョン選択して利用する流れでプログラム�
 
 
 ## sort-line
-リージョン選択した範囲をM-x sort-lineで昇順でsortしてくれます
+リージョン選択した範囲をM-x sort-lineで昇順Sortしてくれます
 
 <img src="/image/emacs/sort-line.gif" width="611" height="300" />
 
 **所感**
 Goのようにimportの並び順を他の言語でも整理したくて探してみると標準機能として入ってました。
-コーディングスタイルとかを気にする方とかであれば重宝できると思います
+コーディングスタイルとかを気にする方とかであればオススメできると思います
 
 **設定**
 Emacsに標準で入ってます
 
 
 ## smooth-scroll
-Emacsでバッファ内のスクロール移動をヌルヌルできるようになります。
+Emacsでバッファ内の画面移動をヌルヌルスクロールできるようになります。
 (キャプチャーとって見たのですがわかりにくかったので割愛します)
 
 **所感**
 このelispを利用するかは好みが出ると思います。
-僕はスクロール移動したときに現在のカーソル位置やバッファ内の位置が
-わからなくなることがあったんですが導入後にそれが解消されました。
+僕は画面移動したときに現在のカーソル位置やバッファ内の位置が
+わからなくなることがあったんですがこれを導入することで解消されました。
 
 **設定**
 ```lisp
@@ -128,7 +131,7 @@ Emacsでバッファ内のスクロール移動をヌルヌルできるように
 ```
 
 ## rainbow-delimiters
-ブラケットにカラーを付けて対象ブラケットの位置がわかりやすくなります
+ブラケット類にカラーを付けて対象ブラケットの位置がわかりやすくなります
 
 <img src="/image/emacs/rainbow-delimiters.gif" width="690" height="300" />
 
@@ -156,7 +159,7 @@ Emacsでバッファ内のスクロール移動をヌルヌルできるように
 
 
 ## swap-window-positions
-画面分割してあるWindow位置を入れ変えます。
+画面分割してあるWindow位置の入れ変えを行います。
 
 <img src="/image/emacs/swap-window-positions.gif" width="728" height="532" />
 
@@ -166,7 +169,7 @@ Emacsでバッファ内のスクロール移動をヌルヌルできるように
 新しいバッファやファイルを開いたときに左右が逆転するときに利用してます。
 
 **設定**
-http://emacswiki.org/emacs/TransposeWindowsより参照
+[http://emacswiki.org/emacs/TransposeWindows]()より参照
 ```lisp
 (defun swap-window-positions ()
   "*Swap the positions of this window and the next one."
@@ -185,12 +188,55 @@ http://emacswiki.org/emacs/TransposeWindowsより参照
       (set-window-point (selected-window) other-window-point)
       (set-window-start (selected-window) other-window-start))
     (select-window other-window)))
+(global-set-key (kbd "C-M-s") 'swap-window-positions)
 ```
 
 
-## bm-goto
-任意の行にマーキングして瞬間移動します。
+## bm
+任意の行にマーキングしてジャンプ移動します。
 
+<img src="/image/emacs/bm.gif" width="720" height="420" />
+
+**所感**
+bmは検索文字入力などが無くマーキングしている行にジャンプ移動するだけなので
+非常に短かいキーストロークで高速にバッファ内を移動できます。
+プログラム書く時はまず絞り込み検索でいくつか参照したい行をマーキングして書くと効率が良かったです。
+
+**設定**
+```lisp
+(require 'bm)
+(global-set-key (kbd "M-p") 'bm-previous)
+(global-set-key (kbd "M-p") 'bm-next)
+```
+
+## anzu
+既存の置換よりインテリジェンスな置換が行えます。
+マッチ数や入力にマッチする文字列をインタラクティブにハイライトしてくれます。
+
+<img src="/image/emacs/anzu.gif" width="720" height="420" />
+
+**所感**
+既存の置換コマンドを置き換え用途に合せて一括やインタラクティブを使い分けてます。
+プログラミング中であれば変数名や関数名を変更したときによく利用しますので
+インタラクティブに確認しながら置換することが多いです。
+
+**設定**
+```lisp
+(require 'anzu)
+(global-anzu-mode +1)
+
+(set-face-attribute 'anzu-mode-line nil
+                    :foreground "yellow" :weight 'bold)
+
+(custom-set-variables
+ '(anzu-mode-lighter "")
+ '(anzu-deactivate-region t)
+ '(anzu-search-threshold 1000)
+ '(anzu-replace-to-string-separator " => "))
+
+(global-set-key (kbd "M-%") 'anzu-query-replace)
+(global-set-key (kbd "C-M-%") 'anzu-query-replace-regexp)
+```
 
 ## ace-jump
 トリガー文字を入力して画面表示内の任意の場所にカーソルをジャンプ移動できます。
@@ -209,7 +255,18 @@ http://emacswiki.org/emacs/TransposeWindowsより参照
 (global-set-key (kbd "C-:") 'ace-jump-line-mode)
 ```
 
-## まとめ
+## おわりに
+いかがでしたでしょうか？ヘビーにEmacsを利用されている方であればおなじみのものが多かったと思います。
 プログラミングに役立つelispを10選しましたが、実際に候補を上げていくと20選以上あり
-あらためていろんなelispに支えられて快適なプログラミング環境を整備できてることを実感しました。
+あらためていろんなelispに支えられて快適なプログラミング環境が整備できてることを実感しました。
+
+僕はVimからEmacsに転身したタイプなのですが転身の際は独特のキーバインド操作やelispなどが難しく
+どうしても使いやすいと思えずに3度ほど転身に失敗しVimに戻ってました。
+4度目の転身は[Emacsテクニックバイブル](https://www.amazon.co.jp/Emacs%E3%83%86%E3%82%AF%E3%83%8B%E3%83%83%E3%82%AF%E3%83%90%E3%82%A4%E3%83%96%E3%83%AB-%EF%BD%9E%E4%BD%9C%E6%A5%AD%E5%8A%B9%E7%8E%87%E3%82%92%E3%82%AB%E3%82%A4%E3%82%BC%E3%83%B3%E3%81%99%E3%82%8B200%E3%81%AE%E6%8A%80%EF%BD%9E-%E3%82%8B%E3%81%B3%E3%81%8D%E3%81%A1/dp/4774143278)が発売された時でとりあえず本の全部のelipsや設定を入れました。
+そして初めて使いやすいかもって思えるようになり、そこから少しずつ自分に合う設定やelispを厳選していき
+カスタマイズしていくこと楽しさを感じながら自然と転身できました。
+Emacsはどこでも自分流にカスタマイズでき、どの言語でもほぼ同じ操作で開発できるので
+今ではこれ以外での開発は考えれないと思わせられるぐらい中毒性を感じてます。
+これからもEmacsと長く関われ続けれたらと思ってます。
+
 ではよいEmacsライフを!!
