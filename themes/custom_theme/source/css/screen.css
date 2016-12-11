@@ -47,9 +47,11 @@ html {
 
 body {
     height: 100%;
-    font-family: 'Open Sans','Helvetica Neue','Helvetica',Arial;
-    font-size: 2.0rem;
-    line-height: 1.6em;
+    font-family: "Helvetica", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Yu Gothic Win", "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "Meiryo", "メイリオ", "MS PGothic", sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.75em;
+    letter-spacing: 0.02rem;
+    font-weight: normal;
     color: #3A4145;
     background: white;
 }
@@ -71,7 +73,7 @@ h4, h5, h6 {
     text-rendering: optimizeLegibility;
     line-height: 1;
     /* margin-top: 0; */
-    font-family: "Open Sans","Helvetica Neue",'Helvetica',Arial;
+    font-family: "Helvetica", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Yu Gothic Win", "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "Meiryo", "メイリオ", "MS PGothic", sans-serif;
     font-weight: 400;
 }
 
@@ -84,12 +86,14 @@ h1 {
 
 h2 {
     font-size: 2.75rem;
-    margin-top: 45px;
     line-height: 1.5em;
-    border-bottom: 1px solid #eee;
+    margin-top: 2.5em;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #c6d0da;
 }
 
 h3 {
+    margin-top: 2em;
     font-size: 2.5rem;
 
 }
@@ -123,7 +127,7 @@ h4 a, h5 a, h6 a {
 
 
 p, ul, ol, dl {
-    margin: 1.6em 0;
+    margin: 1.3em 0;
 }
 
 ol ol, ul ul,
@@ -190,14 +194,14 @@ mark {
 }
 
 code, tt {
-    padding: 1px 3px;
+    background: #f8f8f8;
+    border-radius: .2rem;
+    border: 1px solid #E8E8E8;
+    color: #c25;
     font-size: 0.85em;
-    white-space: pre-wrap;
-    border: 1px solid #E3EDF3;
-    background: #F7FAFB;
-    border-radius: 2px;
-    margin: 0 2px;
-    overflow: auto;
+    font-variant-ligatures: none;
+    padding: 1px 3px;
+    white-space: normal;
 }
 
 pre {
@@ -544,8 +548,10 @@ margin on the iframe, cause it breaks stuff. */
 
 
 .post p {
-    font-size: 18px;
-    line-height: 30px;
+    /* font-size: 18px; */
+    /* line-height: 30px; */
+    font-size: 1.8rem;
+    line-height: 1.75em;
 }
 
 /* The author credit area after the post */
