@@ -60,7 +60,7 @@ Perfumeはいろいろタイアップしてるので
 ## 4位 シークレットシークレット
 <iframe width="560" height="315" src="https://www.youtube.com/embed/th8H34qOk30" frameborder="0" allowfullscreen></iframe>
 
-最初効いたときイントロがあんまり好きでなくて次の動画に飛してたけど
+最初聞いたときイントロがあんまり好きでなくて次の動画に飛してたけど
 よくよく聞いてみると結構好きだった
 
 

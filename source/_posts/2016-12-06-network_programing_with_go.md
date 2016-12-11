@@ -69,7 +69,7 @@ func main() {
 }
 ```
 まず、シングルクライアントでシンプルなソケット通信を実装してみました。
-newListenerでサーバーソケットを生成して、acceptLoopでクライアントからの
+`newListener()`でサーバーソケットを生成して、`acceptLoop()`でクライアントからの
 接続待ち(Accept)、接続後はデータ受信(Read)、データ送信(Write)のループが行われます。
 このAccept、Read、Writeはすべてブロッキング処理なので完了するまで次の処理が行われません。
 この実装では1つのクライアントが処理を行っている間は他のクライアントからは処理は行えません。
@@ -99,7 +99,7 @@ func acceptLoop(listener *net.TCPListener) {
 
 	for {
 		conn, err := listener.Accept()
-    	checkError(err, "Accept Error")
+	   	checkError(err, "Accept Error")
 		go handleClient(conn)
 	}
 }
@@ -281,7 +281,7 @@ func main() {
 ```
 
 Go勉強するなら、GoroutineとChanelをもっと使いたいよねってことで、もう少し並列性を意識したTCPServerを実装してみました。
-他の言語では、selectはファイルディスクリプタがレディになったかを監視する用途で利用しますが
+他の言語では、`select`はファイルディスクリプタがレディになったかを監視する用途で利用しますが
 Goの場合はChanelがレディなったかを監視する用途で利用します。
 また通常、非同期I/Oでリクエスト処理しようとするQueueやリングバッファに詰め込んで
 ロックをかけながら取り出す必要がありますのでコードが複雑になりがちです。
