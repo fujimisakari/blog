@@ -216,16 +216,18 @@ function afterPjax() {
         stackIndex : 1
     });
 
-    var twitter = '<a target="_blank" href="http://twitter.com/share?url=' +
-                  postHref + '" style="padding: 0 2px;"><i class="fa share-icon fa-twitter fa-2x"></i></a>';
-    var facebook = '<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=' +
-                  postHref + '&title=' + postTitle + '" style="padding: 0 2px;"><i class="fa fa-facebook-square fa-2x"></i></a>';
-    var google_plus = '<a target="_blank" href="https://plus.google.com/share?url=' +
-                      postHref + '&title=' + postTitle + '" style="padding: 0 0 0 15px;"><i class="fa share-icon fa-google-plus fa-2x"></i></a>';
-    var hatena = '<a target="_blank" href="http://b.hatena.ne.jp/append?' +
-                 postHref + '" style="padding: 0 2px;"><i class="fa share-icon icon-hatena fa-2x"></i></a>';
-    var poket = '<a target="_blank" href="http://getpocket.com/edit?url=' +
-                postHref + '" style="padding: 0 0 0 2px;"><i class="fa share-icon icon-pocket fa-2x"></i></a>';
+    var windowOpen = 'onclick="window.open(this.href, \'share\', \'width=750,height=235\'); return false;"';
+
+    var twitter = '<a target="_blank" href="http://twitter.com/share?url=' + postHref + '&text=' + postTitle +
+          '" style="padding: 0 2px;" ' + windowOpen + '><i class="fa share-icon fa-twitter fa-2x"></i></a>';
+    var facebook = '<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=' + postHref +
+          '&title=' + postTitle + '" style="padding: 0 2px;" ' + windowOpen + '><i class="fa fa-facebook-square fa-2x"></i></a>';
+    var google_plus = '<a target="_blank" href="https://plus.google.com/share?url=' + postHref +
+          '&title=' + postTitle + '" style="padding: 0 0 0 15px;" ' + windowOpen + '><i class="fa share-icon fa-google-plus fa-2x"></i></a>';
+    var hatena = '<a target="_blank" href="http://b.hatena.ne.jp/append?' + postHref +
+          '" style="padding: 0 2px;" ' + windowOpen + '><i class="fa share-icon icon-hatena fa-2x"></i></a>';
+    var poket = '<a target="_blank" href="http://getpocket.com/edit?url=' + postHref +
+          '" style="padding: 0 0 0 2px;" ' + windowOpen + '><i class="fa share-icon icon-pocket fa-2x"></i></a>';
 
     $('.share-button').popover({
         placement: 'bottom',
