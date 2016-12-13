@@ -23,6 +23,13 @@
                 <time datetime="<%= date_xml(post.date) %>"
                       itemprop="datePublished"><%= date(post.date, null) %></time>
             </div>
+
+            <div style="display: inline-block; margin-left: 10px">
+                <% permalink = config.url + config.root + post.path %>
+                <a href="http://b.hatena.ne.jp/entry/<%= permalink %>" >
+                    <img src="http://b.hatena.ne.jp/entry/image/<%= permalink %>">
+                </a>
+            </div>
         </header>
 
         <!--

@@ -206,11 +206,11 @@ function afterPjax() {
         type: 'cover'
     });
 
-    $('img').each( function() {
-        var $img = $(this),
-            href = $img.attr('src');
-        $img.wrap('<a data-lightbox="a" href="' + href + '" title="' + $img.attr('alt') +'"' + '></a>');
-    });
+    // $('img').each( function() {
+    //     var $img = $(this),
+    //         href = $img.attr('src');
+    //     $img.wrap('<a data-lightbox="a" href="' + href + '" title="' + $img.attr('alt') +'"' + '></a>');
+    // });
 
     $('a[data-lightbox="a"]').fluidbox({
         stackIndex : 1
