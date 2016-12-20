@@ -99,6 +99,16 @@ expand-regionから連動してプログラム書くとき全般に使ってま�
 (global-set-key (kbd "M-\"") 'region-to-double-quote)   ; 選択リージョンを""で囲む
 (global-set-key (kbd "M-9") 'region-to-bracket)         ; 選択リージョンを()で囲む
 (global-set-key (kbd "M-[") 'region-to-square-bracket)  ; 選択リージョンを[]で囲む
+
+;; 2016/12/15 追記
+;; リージョン選択時のみアクティブになるregion-bindings-mode(マイナーモード)を教えてもらいました
+;; こちらで設定する方がグローバルなキーバインドを節約でき良いと思います
+(require 'region-bindings-mode)
+(region-bindings-mode-enable)
+(define-key region-bindings-mode-map (kbd "M-'") 'region-to-single-quote)
+(define-key region-bindings-mode-map (kbd "M-\"") 'region-to-double-quote)
+(define-key region-bindings-mode-map (kbd "M-9") 'region-to-bracket)
+(define-key region-bindings-mode-map (kbd "M-[") 'region-to-square-bracket)
 ```
 
 
@@ -245,7 +255,7 @@ bmは検索文字入力などが無くマーキングしている行にジャン
 
 **所感**
 使うと打鍵数が圧倒的に減り、慣れ出すとこれ無しではやっていけなくなります。
-ただ、最初は物珍しさから使いますますがいつの間にか存在を忘れてしまうので
+ただ、最初は物珍しさから使いますがいつの間にか存在を忘れてしまうので
 何も考えずに自然な流れで使えるようになるまで時間がかかります。
 
 **設定**

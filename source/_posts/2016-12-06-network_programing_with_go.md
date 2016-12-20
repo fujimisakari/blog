@@ -144,9 +144,12 @@ Goroutineを利用した場合、シンプルでわかりやすく且つ並列�
 ## マルチクライアントでselectとchanelを組み合せた通信
 
 ```go
+package main
+
 import (
 	"bufio"
 	"fmt"
+	"io"
 	"net"
 	"os"
 )
@@ -180,7 +183,13 @@ type Client struct {
 func (client *Client) read() {
 	for {
 		line, err := client.reader.ReadString('\n')
-		checkError(err, "ReadString Error")
+		if err == io.EOF {
+			client.conn.Close()
+			break
+		}
+		if err != nil {
+			checkError(err, "ReadString Error")
+		}
 		client.incoming <- line
 		fmt.Printf("[%s]Read:%s", client.conn.RemoteAddr(), line)
 	}
