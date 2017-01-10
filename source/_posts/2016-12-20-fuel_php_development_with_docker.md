@@ -58,7 +58,7 @@ fuel_php_with_docker
 ```
 
 各コンテナ別にディレクトリを作っていて、Dockerfileを準備してます。
-fuelディレクトリは、FuelPHPプロジェクトでAppコンテナへマウントされます。
+fuel_projectディレクトリは、Appコンテナへマウントされます。
 
 上記の全ファイルはgithubに置いてます
 https://github.com/fujimisakari/fuel-php-docker.git
@@ -69,7 +69,7 @@ https://github.com/fujimisakari/fuel-php-docker.git
 ``` sh
 fuel_app:
   container_name: "fuel_app"
-  image: fuel_app
+  build: ./app
   restart: always
   env_file: ./app/env
   links:
@@ -83,7 +83,7 @@ fuel_app:
 
 fuel_nginx:
   container_name: "fuel_nginx"
-  image: fuel_nginx
+  build: ./nginx
   restart: always
   ports:
     - "80:80"
@@ -201,7 +201,7 @@ $ oil create fuel_project
 $ docker-compose up --build
 ```
 
-http://docker-machine でアクセスできるようになる
+`http://docker-machine/index.php` でアクセスできるようになる
 
 
 ## 参考

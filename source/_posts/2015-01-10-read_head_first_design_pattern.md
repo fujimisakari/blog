@@ -9,7 +9,7 @@ tags:
 年末にデザインパターンを勉強したので備忘録としてブログに残していこうかと。
 勉強した本はこちら
 
-<iframe src="http://rcm-fe.amazon-adsystem.com/e/cm?t=fujimisakari-22&o=9&p=8&l=as1&asins=4873112494&ref=tf_til&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=0000FF&bc1=000000&bg1=FFFFFF&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+<div class="amazlet-box" style="margin:30px 0px;"><div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4873112494/fujimisakar03-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/519s0OfidCL._SL160_.jpg" alt="Head Firstデザインパターン ―頭とからだで覚えるデザインパターンの基本" style="border: none;" /></a></div><div class="amazlet-info" style="line-height:120%; margin-bottom: 10px"><div class="amazlet-name" style="margin-bottom:10px;line-height:120%"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4873112494/fujimisakar03-22/ref=nosim/" name="amazletlink" target="_blank">Head Firstデザインパターン ―頭とからだで覚えるデザインパターンの基本</a></div><div class="amazlet-detail" style="margin-top:20px">Eric Freeman Elisabeth Freeman Kathy Sierra Bert Bates <br />オライリージャパン <br />売り上げランキング: 57,159<br /></div><div class="amazlet-sub-info" style="float: left;"><div class="amazlet-link" style="margin-top: 5px"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4873112494/fujimisakar03-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amazlet-footer" style="clear: left"></div></div>
 
 所感としては、デザインパターンを知らず、どうすればプログラミングレベルを
 上げることができるか迷ってる方にオススメと思いました。

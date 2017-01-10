@@ -10,7 +10,9 @@ tags:
 [Goでネットワークプログラミング](http://blog.fujimisakari.com/network_programing_with_go/)の投稿に引き続き、Pythonでネットワークプログラミングの
 いくつかのパターンを実装してみましたのでサンプルコードと簡単な解説をしたいと思ってます。
 
-以前、[Linuxネットワークプログラミングバイブル](https://www.amazon.co.jp/Linux%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%83%90%E3%82%A4%E3%83%96%E3%83%AB-%E5%B0%8F%E4%BF%A3%E5%85%89%E4%B9%8B-ebook/dp/B00O8GIL62)を読んで
+<div class="amazlet-box" style="margin:40px 0px 20px;"><div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00O8GIL62/fujimisakar03-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/51Ai4EXNXoL._SL160_.jpg" alt="Linuxネットワークプログラミングバイブル" style="border: none;" /></a></div><div class="amazlet-info" style="line-height:120%; margin-bottom: 10px"><div class="amazlet-name" style="margin-bottom:10px;line-height:120%"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00O8GIL62/fujimisakar03-22/ref=nosim/" name="amazletlink" target="_blank">Linuxネットワークプログラミングバイブル</a></div><div class="amazlet-detail" style="margin-top: 20px">秀和システム (2014-10-07)<br />売り上げランキング: 24,567<br /></div><div class="amazlet-sub-info" style="float: left;"><div class="amazlet-link" style="margin-top: 5px"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00O8GIL62/fujimisakar03-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amazlet-footer" style="clear: left"></div></div>
+
+以前、このLinuxネットワークプログラミングバイブルを読んで
 第5章のIOの多重化の部分が非常に興味深くハンズオンしてきちんと理解したいと思ってたので
 C言語で書かれていたロジックをPython3.5.2で書き直してみました。
 
