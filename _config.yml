@@ -90,8 +90,8 @@ exclude_generator:
 deploy:
   type: rsync
   host: blog.fujimisakari.com
-  user: www-data
-  root: /var/www/blog
+  user: fujimo
+  root: /home/fujimo/docker-fujimisakari-apps/blog
   port: 22
   delete: true
   verbose: true
