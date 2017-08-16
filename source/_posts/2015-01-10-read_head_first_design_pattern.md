@@ -11,6 +11,22 @@ tags:
 
 <div class="amazlet-box" style="margin:30px 0px;"><div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4873112494/fujimisakar03-22/ref=nosim/" name="amazletlink" target="_blank"><img src="https://images-fe.ssl-images-amazon.com/images/I/519s0OfidCL._SL160_.jpg" alt="Head Firstデザインパターン ―頭とからだで覚えるデザインパターンの基本" style="border: none;" /></a></div><div class="amazlet-info" style="line-height:120%; margin-bottom: 10px"><div class="amazlet-name" style="margin-bottom:10px;line-height:120%"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4873112494/fujimisakar03-22/ref=nosim/" name="amazletlink" target="_blank">Head Firstデザインパターン ―頭とからだで覚えるデザインパターンの基本</a></div><div class="amazlet-detail" style="margin-top:20px">Eric Freeman Elisabeth Freeman Kathy Sierra Bert Bates <br />オライリージャパン <br />売り上げランキング: 57,159<br /></div><div class="amazlet-sub-info" style="float: left;"><div class="amazlet-link" style="margin-top: 5px"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4873112494/fujimisakar03-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amazlet-footer" style="clear: left"></div></div>
 
+- 学習メモ
+  - <a href="https://gist.github.com/fujimisakari/043638e2e47337a16e21552acc386b2a">HeadFirstデザインパターン Index</a>
+  - <a href="https://gist.github.com/fujimisakari/5797dfb18f4fc350e206eced83474d2e">Strategyパターン</a>
+  - <a href="https://gist.github.com/fujimisakari/c1c1b9b10f101a2b2c62425e2cc4f820">Decoratorパターン</a>
+  - <a href="https://gist.github.com/fujimisakari/d5bb42bc8a2990960dec46fbc318a308">Observerパターン</a>
+  - <a href="https://gist.github.com/fujimisakari/1a4591b8902f292ca9b0e193f866608c">AbstractFactoryパターン</a>
+  - <a href="https://gist.github.com/fujimisakari/69ba6278a24de3dc34ce34bbbe8a273c">FactoryMethodパターン</a>
+  - <a href="https://gist.github.com/fujimisakari/2149e54c2e0db573017ac42e0f6a9772">Commandパターン</a>
+  - <a href="https://gist.github.com/fujimisakari/b38f173158234bad23ca7a47ec8a498d">Singletonパターン</a>
+  - <a href="https://gist.github.com/fujimisakari/9dd755295805b6d14be8867e1b733f8b">Adapterパターン </a>
+  - <a href="https://gist.github.com/fujimisakari/21ace327b49776c30e76168d02811d79">Facadeパターン </a>
+  - <a href="https://gist.github.com/fujimisakari/a36bbfe3e7d06d4d598ef82884a9e9eb">TemplateMethodパターン</a>
+  - <a href="https://gist.github.com/fujimisakari/9e1b28e56c51313b3ac662ce6221f724">Iteratorパターン </a>
+  - <a href="https://gist.github.com/fujimisakari/a4e5504b27e4addd46c3f80ccc7ab7a0">Compositパターン</a>
+  - <a href="https://gist.github.com/fujimisakari/83700cd2d3576181de23143958545df0">Stateパターン</a>
+
 所感としては、デザインパターンを知らず、どうすればプログラミングレベルを
 上げることができるか迷ってる方にオススメと思いました。
 
