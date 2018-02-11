@@ -1,0 +1,9 @@
+blog:
+  build: ./docker
+  ports:
+    - "4000:4000"
+  volumes:
+    - ./source:/blog/source
+    - ./themes:/blog/themes
+    - ./_config.yml:/blog/_config.yml
+  command: server
