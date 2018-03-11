@@ -84,19 +84,19 @@ MELPAからインストールしました(M-x list-package → emacs-eclim)
 
 ### コード補完
 auto-complete-modeとeclimを併用してTABでコード補完できる
-![code_completion](/image/code_completion.gif)
+![code completion](/image/java/code-completion.gif)
 
 ### シンタックスのチェック
 ファイル保存毎にシンタックスのチェックが動作する
-![code_completion](/image/syntax_checking.gif)
+![syntax checking](/image/java/syntax-checking.gif)
 
 ### Emacs上からのコンパイル
 M-x eclim-ant-run でbuildツールのantを使ってコンパイルできる
-![code_completion](/image/ant_build.gif)
+![ant build](/image/java/ant-build.gif)
 
 ### Emacs上からの実行
 M-x eclim-run-class でmainを実行します
-![code_completion](/image/run_class.gif)
+![run class](/image/java/run-class.gif)
 
 
 ## 感想

@@ -21,7 +21,7 @@ KVS: memcached, Redis
 
 ## コンテナ構成
 
-<img src="/image/docker/php_development_with_docker.png" width="728" height="532" />
+<img src="/image/docker/php-development-with-docker.png" width="728" height="532" />
 
 NginxのコンテナにAppコンテナをマウントし、静的コンテンツへのアクセスはNginxで返します。
 また、APPコンテナで生成されたPHP-FPMのUnixSocketもマウントしており動的コンテンツは

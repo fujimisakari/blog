@@ -20,7 +20,7 @@ tags: Security
 
 ### ID/PW
 
-<img src="/image/security/id_pw.png" />
+<img src="/image/security/id-pw.png" />
 
 ID/PWはもっとも一般的なユーザー認証で認証時にAccess Token発行 or Session開始して通信を行います。
 Appの場合では、発行されたAccess TokenをAuthorization Headerで利用してステートレスなAPI通信を行う。
@@ -41,7 +41,7 @@ SPAの場合、Server側で発行したAccess Tokenを利用してステート�
 
 #### ・Appの場合
 
-<img src="/image/security/oauth2_app.png" />
+<img src="/image/security/oauth2-app.png" />
 
 Native AppからOAuth2認証フローを踏むときはWeb/SPAとはアプローチが異ります。
 
@@ -58,7 +58,7 @@ iOSではあらかじめ認証済みアカウント情報(FacebookやTwitter等)
 
 ### OpenID Connect
 
-<img src="/image/security/openid_connect.png" />
+<img src="/image/security/openid-connect.png" />
 
 OpenID ConnectはOAuth2.0を拡張したプロトコルで認証フローもほぼ同じです。
 大きな違いは、OAuth2.0が認可(リソースのアクセス権限付与)だったのに対して

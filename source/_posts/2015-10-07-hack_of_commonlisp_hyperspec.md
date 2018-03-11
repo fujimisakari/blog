@@ -13,7 +13,7 @@ tags:
 検索機能としては、インタラクティブ検索とカーソル検索が2つが用意されてて
 とりあえず、こんな感じで見れるようになる
 
-![hyperspec](/image/hyperspec.gif)
+![hyperspec](/image/emacs/hyperspec.gif)
 
 
 ## 導入手順
