@@ -16,6 +16,17 @@
   }
 %>
 <head>
+  <% if (theme.google_analytics && process.env.ENV === 'production') { %>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-57158248-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-57158248-1');
+  </script>
+  <% } %>
   <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
   <title><% if (title){ %><%= title %> / <% } %><%= config.title %></title>
@@ -47,7 +58,6 @@
     analytics.load("uj8ix0aatc");
   </script>
   <% } %>
-
 </head>
 <body>
 <div class="container">

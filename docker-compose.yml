@@ -1,9 +1,14 @@
-blog:
-  build: ./docker
-  ports:
-    - "4000:4000"
-  volumes:
-    - ./source:/blog/source
-    - ./themes:/blog/themes
-    - ./_config.yml:/blog/_config.yml
-  command: server
+version: '3'  # バージョンを追加
+services:
+  blog-deploy:
+    build: ./docker
+    ports:
+      - "4000:4000"
+    environment:
+      - ENV=dev
+      # - ENV=production
+    volumes:
+      - ./source:/blog/source
+      - ./themes:/blog/themes
+      - ./_config.yml:/blog/_config.yml
+    command: deploy
